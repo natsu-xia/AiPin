@@ -216,15 +216,15 @@
     
     [self.guideViews addObject:btn];
 
-    UIButton *lockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [lockBtn setTitle:@"清空图片" forState:UIControlStateNormal];
-    [lockBtn setImage:LoadImage(@"lock") forState:UIControlStateNormal];
-    [lockBtn addTarget:self action:@selector(jumpToUnlookController) forControlEvents:UIControlEventTouchUpInside];
-    [lockBtn setTitleColor:GLOABLE_TEXT_COLR forState:UIControlStateNormal];
-    lockBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-    [lockBtn setTitleColor:GLOABLE_TEXT_SELECT_COLOR forState:UIControlStateHighlighted];
-    UIBarButtonItem *lockItem = [[UIBarButtonItem alloc] initWithCustomView:lockBtn];
-    self.navigationItem.leftBarButtonItem = lockItem;
+//    UIButton *lockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+////    [lockBtn setTitle:@"清空图片" forState:UIControlStateNormal];
+//    [lockBtn setImage:LoadImage(@"lock") forState:UIControlStateNormal];
+//    [lockBtn addTarget:self action:@selector(jumpToUnlookController) forControlEvents:UIControlEventTouchUpInside];
+//    [lockBtn setTitleColor:GLOABLE_TEXT_COLR forState:UIControlStateNormal];
+//    lockBtn.titleLabel.font = [UIFont systemFontOfSize:16];
+//    [lockBtn setTitleColor:GLOABLE_TEXT_SELECT_COLOR forState:UIControlStateHighlighted];
+//    UIBarButtonItem *lockItem = [[UIBarButtonItem alloc] initWithCustomView:lockBtn];
+//    self.navigationItem.leftBarButtonItem = lockItem;
 //
 //    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [leftBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -275,8 +275,8 @@
     
    
     UIImage *resultImage = [self stichingResultImage];
-    resultImage = [resultImage addWaterText:@"陈少哲出品"];
-    resultImage = [resultImage addWaterImage:[UIImage imageNamed:@"logo"] waterImageRect:CGRectMake(resultImage.size.width/2, resultImage.size.height - 300 , SCREEN_WIDTH, 300)];
+//    resultImage = [resultImage addWaterText:@"陈少哲出品"];
+//    resultImage = [resultImage addWaterImage:[UIImage imageNamed:@"logo"] waterImageRect:CGRectMake(resultImage.size.width/2, resultImage.size.height - 300 , SCREEN_WIDTH, 300)];
     NSString *imageSize = [resultImage caculateImageSize];
     NSString *title = [NSString stringWithFormat:@"%@",imageSize];
      [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"正在保存图片，图片大小：%@M",title]];
@@ -293,7 +293,7 @@
     }
     else
     {
-        [SVProgressHUD showSuccessWithStatus:SZLocalizedString(@"保存图片失败")];
+        [SVProgressHUD showSuccessWithStatus:SZLocalizedString(@"保存图片成功")];
     }
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [SVProgressHUD dismiss];

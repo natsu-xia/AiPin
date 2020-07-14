@@ -498,7 +498,7 @@ ZWMGuideViewLayoutDelegate
 - (void)onSave:(id)sender
 {
     _image = [self stichingResultImage];
-   _image = [_image addWaterText:SZLocalizedString(@"图拼拼")];
+   _image = [_image addWaterText:SZLocalizedString(@"爱拼")];
    _image = [_image addWaterImage:[UIImage imageNamed:@"logo"] waterImageRect:CGRectMake(_image.size.width/2, 20, 300, 300)];
     UIImageWriteToSavedPhotosAlbum(_image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
 }

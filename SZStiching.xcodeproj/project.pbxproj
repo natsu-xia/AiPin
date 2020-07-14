@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -683,8 +683,8 @@
 			baseConfigurationReference = 39D62408DA7F586DB5C49AD7 /* Pods-SZStiching.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TH76RSREE9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = T9JFC767WQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)//SZStiching/SZStiching.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SZStiching/Info.plist";
@@ -693,8 +693,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sz.SZStiching;
+				PRODUCT_BUNDLE_IDENTIFIER = com.letapp.aipin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AiPin_DEV;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -704,8 +705,8 @@
 			baseConfigurationReference = 2B1905AE8E3978D14ACF2ECE /* Pods-SZStiching.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TH76RSREE9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)//SZStiching/SZStiching.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SZStiching/Info.plist";
@@ -714,8 +715,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sz.SZStiching;
+				PRODUCT_BUNDLE_IDENTIFIER = com.letapp.aipin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

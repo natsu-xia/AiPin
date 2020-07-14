@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/shaozhe/Downloads/SZStiching/SZStiching.xcodeproj">
+      location = "group:SZStiching.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SZStiching.xcodeproj">
    </FileRef>
 </Workspace>
