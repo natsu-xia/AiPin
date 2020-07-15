@@ -118,6 +118,7 @@
 		35FD6F4E2179C5AA00E9FCED /* UIImage+Logo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Logo.h"; sourceTree = "<group>"; };
 		35FD6F4F2179C5AA00E9FCED /* UIImage+Logo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Logo.m"; sourceTree = "<group>"; };
 		39D62408DA7F586DB5C49AD7 /* Pods-SZStiching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZStiching.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZStiching/Pods-SZStiching.debug.xcconfig"; sourceTree = "<group>"; };
+		6C09E05224BDB81C0083D78F /* SZStiching.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SZStiching.entitlements; sourceTree = "<group>"; };
 		F45AA757EE43F85849904EBF /* Pods-HXStiching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXStiching.release.xcconfig"; path = "Pods/Target Support Files/Pods-HXStiching/Pods-HXStiching.release.xcconfig"; sourceTree = "<group>"; };
 		FFBBD7D6605C9B0C52E96368 /* Pods-HXStiching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXStiching.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXStiching/Pods-HXStiching.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +156,7 @@
 		3550C80321757F96009E67E4 /* SZStiching */ = {
 			isa = PBXGroup;
 			children = (
+				6C09E05224BDB81C0083D78F /* SZStiching.entitlements */,
 				3576DF7821AB90F7002939E4 /* Main */,
 				3550C81A2175802F009E67E4 /* SZImageStiching */,
 				3550C80421757F96009E67E4 /* AppDelegate.h */,
@@ -683,6 +685,8 @@
 			baseConfigurationReference = 39D62408DA7F586DB5C49AD7 /* Pods-SZStiching.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SZStiching/SZStiching.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = T9JFC767WQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -693,6 +697,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.letapp.aipin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = AiPin_DEV;
@@ -705,8 +710,10 @@
 			baseConfigurationReference = 2B1905AE8E3978D14ACF2ECE /* Pods-SZStiching.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SZStiching/SZStiching.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T9JFC767WQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)//SZStiching/SZStiching.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SZStiching/Info.plist";
@@ -715,9 +722,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.letapp.aipin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = AiPin_DIS;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
